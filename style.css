@@ -41,6 +41,45 @@ figure {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    margin: 0;
+}
+
+input {    
+    border: 1px solid #0D6CBC;
+    border-radius: 0.25rem;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #0D6CBC;
+    border: 1px solid #0A5694;
+    border-radius: 0.5rem;
+    color: white;
+    cursor: pointer;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin-top: 2px;
+    transition: all 100ms ease-in-out;
+}
+
+button:hover {
+    background-color: #0F86E6;
+    border-bottom-width: 3px;
+    margin-top: 0;
+}
+
+button:active {
+    background-color: #0A5694;
+    border-color: #074272;
+    border-bottom-width: 0;
+    border-top-width: 3px;
+    margin-top: 1px;
 }
 
 .flex {
@@ -71,6 +110,14 @@ figure {
     margin-top: 2rem;
 }
 
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
 .self-stretch {
     align-self: stretch;
 }
@@ -86,6 +133,6 @@ figure {
 @media only screen and (max-width: 600px) {
   main {
     padding: 20px;
-    width: 100%;
+    width: calc(100vw - 40px);
   }
 }
